@@ -70,6 +70,8 @@ public class MenuController implements Initializable {
             Scene level1 = new Scene(root);
             Stage stage = new Stage();
             stage.setScene(level1);
+            Level1Controller controller=loader.getController();
+            controller.drawMap();
             stage.show();
         }
         catch (IOException e) {
